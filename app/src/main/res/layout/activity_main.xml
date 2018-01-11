@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aabbcc"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:layout_width="0px"
+      android:layout_height="0px"
+      android:focusable="true"
+      android:focusableInTouchMode="true"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入文字进行搜索"
+        android:completionHint="最近的五条搜索记录"
+        android:completionThreshold="1"
+        android:dropDownHeight="match_parent" />
+    <Button
+        android:id="@+id/search"
+        android:text="搜索"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
